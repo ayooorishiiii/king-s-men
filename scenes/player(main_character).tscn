@@ -99,13 +99,14 @@ animations = [{
 radius = 16.03122
 
 [node name="player(main character)" type="CharacterBody2D" unique_id=548742080]
+z_index = 5
 script = ExtResource("1_vj86t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=145228044]
 sprite_frames = SubResource("SpriteFrames_sxpiy")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.2758308
+frame_progress = 0.7910551
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500489944]
 position = Vector2(-5, 22)
