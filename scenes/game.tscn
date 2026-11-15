@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://vg816nwrkf2d" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="Script" uid="uid://84grpbsodui7" path="res://scenes/main_body.gd" id="4_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://d3cqovtahe71w" path="res://scenes/lasser.tscn" id="6_p57ef"]
+[ext_resource type="Script" uid="uid://b7opoq1ttqt5i" path="res://scenes/coin.gd" id="7_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://bgxb2rouqqcri" path="res://scenes/killzone.tscn" id="8_gee14"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
@@ -73,6 +74,9 @@ sources/1 = SubResource("TileSetAtlasSource_lbhrr")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_17b4m"]
 distance = 1.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxpiy"]
+size = Vector2(16.5, 8.5)
+
 [node name="Game" type="Node2D" unique_id=1991194114]
 metadata/_edit_vertical_guides_ = [-371.0]
 
@@ -111,12 +115,15 @@ script = ExtResource("4_u5sy4")
 position = Vector2(-2, -52)
 
 [node name="Camera2D2" type="Camera2D" parent="player" unique_id=48217060]
-zoom = Vector2(4, 4)
+position = Vector2(-8, 7)
+zoom = Vector2(2.5, 2.5)
 limit_top = 323
 position_smoothing_enabled = true
 
 [node name="coin" parent="." unique_id=1600688841 instance=ExtResource("4_lbhrr")]
 position = Vector2(65, -64)
+collision_mask = 2
+script = ExtResource("7_0tnpc")
 
 [node name="coin3" parent="." unique_id=672003235 instance=ExtResource("4_lbhrr")]
 position = Vector2(356, -30)
@@ -149,3 +156,431 @@ frame_progress = 0.5461804
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KILLZONE" unique_id=1125417017]
 position = Vector2(37, 84)
 shape = SubResource("WorldBoundaryShape2D_17b4m")
+
+[node name="Killzone" parent="." unique_id=1446231098 instance=ExtResource("8_gee14")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=314811242]
+position = Vector2(217, -52)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone61" parent="." unique_id=1606305207 instance=ExtResource("8_gee14")]
+position = Vector2(-20, -62)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone61" unique_id=734499704]
+position = Vector2(217, -52)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone60" parent="." unique_id=1540059994 instance=ExtResource("8_gee14")]
+position = Vector2(12, -66)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone60" unique_id=982222013]
+position = Vector2(217, -52)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone2" parent="." unique_id=20781463 instance=ExtResource("8_gee14")]
+position = Vector2(5, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone2" unique_id=450185325]
+position = Vector2(564, -19)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone3" parent="." unique_id=2037522174 instance=ExtResource("8_gee14")]
+position = Vector2(118, -31)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone3" unique_id=646343815]
+position = Vector2(209.75, -51.75)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone4" parent="." unique_id=1240787712 instance=ExtResource("8_gee14")]
+position = Vector2(163, -36)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone4" unique_id=1515224632]
+position = Vector2(211, -48.5)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone5" parent="." unique_id=298425795 instance=ExtResource("8_gee14")]
+position = Vector2(215, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone5" unique_id=462685998]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone6" parent="." unique_id=2133569811 instance=ExtResource("8_gee14")]
+position = Vector2(238, -82)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone6" unique_id=796673067]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone7" parent="." unique_id=62315298 instance=ExtResource("8_gee14")]
+position = Vector2(322, -50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone7" unique_id=2007853532]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone8" parent="." unique_id=681361093 instance=ExtResource("8_gee14")]
+position = Vector2(337, -50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone8" unique_id=764035952]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone9" parent="." unique_id=2118293938 instance=ExtResource("8_gee14")]
+position = Vector2(402, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone9" unique_id=1408267344]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone10" parent="." unique_id=486719683 instance=ExtResource("8_gee14")]
+position = Vector2(415, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone10" unique_id=836991566]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone11" parent="." unique_id=1363453806 instance=ExtResource("8_gee14")]
+position = Vector2(467, -48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone11" unique_id=1588532608]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone12" parent="." unique_id=1450621068 instance=ExtResource("8_gee14")]
+position = Vector2(481, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone12" unique_id=967825642]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone59" parent="." unique_id=1242072653 instance=ExtResource("8_gee14")]
+position = Vector2(481, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone59" unique_id=1435827327]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone58" parent="." unique_id=1955496176 instance=ExtResource("8_gee14")]
+position = Vector2(481, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone58" unique_id=618670894]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone13" parent="." unique_id=391512965 instance=ExtResource("8_gee14")]
+position = Vector2(517, -64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone13" unique_id=1705346280]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone14" parent="." unique_id=743246804 instance=ExtResource("8_gee14")]
+position = Vector2(613, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone14" unique_id=1569221924]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone15" parent="." unique_id=699631549 instance=ExtResource("8_gee14")]
+position = Vector2(693, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone15" unique_id=641133433]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone16" parent="." unique_id=1430576382 instance=ExtResource("8_gee14")]
+position = Vector2(709, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone16" unique_id=1968434399]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone17" parent="." unique_id=1901917773 instance=ExtResource("8_gee14")]
+position = Vector2(725, -97)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone17" unique_id=1706270489]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone18" parent="." unique_id=475288481 instance=ExtResource("8_gee14")]
+position = Vector2(964, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone18" unique_id=1120070766]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone19" parent="." unique_id=1820473401 instance=ExtResource("8_gee14")]
+position = Vector2(945, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone19" unique_id=750963633]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone20" parent="." unique_id=1455472287 instance=ExtResource("8_gee14")]
+position = Vector2(928, -81)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone20" unique_id=871285557]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone21" parent="." unique_id=1021606186 instance=ExtResource("8_gee14")]
+position = Vector2(758, -81)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone21" unique_id=1948312878]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone22" parent="." unique_id=1392300122 instance=ExtResource("8_gee14")]
+position = Vector2(1029, -48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone22" unique_id=430032516]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone23" parent="." unique_id=1520613501 instance=ExtResource("8_gee14")]
+position = Vector2(1047, -50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone23" unique_id=133758404]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone24" parent="." unique_id=1727989122 instance=ExtResource("8_gee14")]
+position = Vector2(1062, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone24" unique_id=19979945]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone25" parent="." unique_id=2065027435 instance=ExtResource("8_gee14")]
+position = Vector2(851, -33)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone25" unique_id=1118888272]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone26" parent="." unique_id=1068286122 instance=ExtResource("8_gee14")]
+position = Vector2(996, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone26" unique_id=1110710907]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone27" parent="." unique_id=1398899041 instance=ExtResource("8_gee14")]
+position = Vector2(1012, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone27" unique_id=1173314205]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone28" parent="." unique_id=1684406830 instance=ExtResource("8_gee14")]
+position = Vector2(1174, 14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone28" unique_id=1184977081]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone29" parent="." unique_id=1889890518 instance=ExtResource("8_gee14")]
+position = Vector2(1195, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone29" unique_id=238789829]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone30" parent="." unique_id=1390933722 instance=ExtResource("8_gee14")]
+position = Vector2(1251, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone30" unique_id=1341688611]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone31" parent="." unique_id=998160677 instance=ExtResource("8_gee14")]
+position = Vector2(1269, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone31" unique_id=1294277827]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone32" parent="." unique_id=1782340446 instance=ExtResource("8_gee14")]
+position = Vector2(1284, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone32" unique_id=1397255927]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone33" parent="." unique_id=776687208 instance=ExtResource("8_gee14")]
+position = Vector2(1409, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone33" unique_id=994723289]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone34" parent="." unique_id=263868369 instance=ExtResource("8_gee14")]
+position = Vector2(1427, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone34" unique_id=2077124259]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone35" parent="." unique_id=1093063708 instance=ExtResource("8_gee14")]
+position = Vector2(1443, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone35" unique_id=995109754]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone36" parent="." unique_id=1008043827 instance=ExtResource("8_gee14")]
+position = Vector2(1571, -62)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone36" unique_id=421512350]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone37" parent="." unique_id=141544497 instance=ExtResource("8_gee14")]
+position = Vector2(1607, -78)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone37" unique_id=862267413]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone38" parent="." unique_id=1680193892 instance=ExtResource("8_gee14")]
+position = Vector2(1620, -61)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone38" unique_id=582123757]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone39" parent="." unique_id=310431671 instance=ExtResource("8_gee14")]
+position = Vector2(1684, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone39" unique_id=1087664389]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone40" parent="." unique_id=1349391828 instance=ExtResource("8_gee14")]
+position = Vector2(1699, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone40" unique_id=11232950]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone41" parent="." unique_id=1943604386 instance=ExtResource("8_gee14")]
+position = Vector2(1728, -32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone41" unique_id=619718487]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone42" parent="." unique_id=1578117164 instance=ExtResource("8_gee14")]
+position = Vector2(1829, -32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone42" unique_id=1388772249]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone43" parent="." unique_id=727279608 instance=ExtResource("8_gee14")]
+position = Vector2(1889, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone43" unique_id=2051594367]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone44" parent="." unique_id=587610485 instance=ExtResource("8_gee14")]
+position = Vector2(2020, -81)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone44" unique_id=1642452525]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone45" parent="." unique_id=38221852 instance=ExtResource("8_gee14")]
+position = Vector2(1829, -32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone45" unique_id=1892766815]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone46" parent="." unique_id=738570252 instance=ExtResource("8_gee14")]
+position = Vector2(1847, -32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone46" unique_id=621084674]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone47" parent="." unique_id=1044026410 instance=ExtResource("8_gee14")]
+position = Vector2(2050, -49)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone47" unique_id=686134185]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone48" parent="." unique_id=811443848 instance=ExtResource("8_gee14")]
+position = Vector2(2084, -30)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone48" unique_id=1578133478]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone49" parent="." unique_id=1200776369 instance=ExtResource("8_gee14")]
+position = Vector2(2102, -30)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone49" unique_id=652836828]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone50" parent="." unique_id=2011576140 instance=ExtResource("8_gee14")]
+position = Vector2(2165, -15)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone50" unique_id=886967067]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone51" parent="." unique_id=39508226 instance=ExtResource("8_gee14")]
+position = Vector2(2038, -80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone51" unique_id=2064753657]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone52" parent="." unique_id=1776411732 instance=ExtResource("8_gee14")]
+position = Vector2(2260, -66)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone52" unique_id=693640160]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone53" parent="." unique_id=123772114 instance=ExtResource("8_gee14")]
+position = Vector2(2280, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone53" unique_id=371093279]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone54" parent="." unique_id=218509510 instance=ExtResource("8_gee14")]
+position = Vector2(2296, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone54" unique_id=2106856064]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone55" parent="." unique_id=258150504 instance=ExtResource("8_gee14")]
+position = Vector2(2401, -95)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone55" unique_id=1022812210]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone56" parent="." unique_id=1399098736 instance=ExtResource("8_gee14")]
+position = Vector2(2385, -96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone56" unique_id=1236009693]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[node name="Killzone57" parent="." unique_id=823531811 instance=ExtResource("8_gee14")]
+position = Vector2(4, -66)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone57" unique_id=1104942792]
+position = Vector2(211.5, -53)
+shape = SubResource("RectangleShape2D_sxpiy")
+
+[connection signal="body_entered" from="coin" to="main body" method="_on_coin_body_entered"]

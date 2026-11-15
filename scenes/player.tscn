@@ -6,8 +6,8 @@
 script/source = "extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 250.0
+const JUMP_VELOCITY = -300.0
 
 
 func _physics_process(delta: float) -> void:
@@ -76,7 +76,7 @@ position = Vector2(-0.5, -2)
 shape = SubResource("RectangleShape2D_yqjtg")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2132393455]
-zoom = Vector2(4, 4)
+zoom = Vector2(2.5, 2.5)
 limit_bottom = 94
 limit_smoothed = true
 position_smoothing_enabled = true
