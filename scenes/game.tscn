@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b021daopjjgsk"]
 
 [ext_resource type="PackedScene" uid="uid://c7rebd4ygjf17" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://c2khbf2q00k2o" path="res://assets/background asset/sci-fi platformer - free/Background_1.png" id="2_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bi261l337tq5h" path="res://assets/background asset/sci-fi platformer - free/Background_0.png" id="2_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://bbak0r3vrf7fk" path="res://assets/background asset/sci-fi platformer - free/tileset.png" id="2_yqjtg"]
 
@@ -70,16 +71,27 @@ metadata/_edit_vertical_guides_ = [-371.0]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=503004164]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=123267185]
+[node name="BG" type="ParallaxLayer" parent="ParallaxBackground" unique_id=123267185]
 motion_mirroring = Vector2(1536, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1415697137]
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BG" unique_id=1415697137]
 position = Vector2(184, -117)
 texture = ExtResource("2_lnu2h")
 
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1504234300]
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/BG" unique_id=1504234300]
 position = Vector2(952, -117)
 texture = ExtResource("2_lnu2h")
+
+[node name="BG2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1972116025]
+motion_mirroring = Vector2(1536, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BG2" unique_id=1504563113]
+position = Vector2(184, -117)
+texture = ExtResource("2_lbhrr")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/BG2" unique_id=53251499]
+position = Vector2(952, -117)
+texture = ExtResource("2_lbhrr")
 
 [node name="main body" type="TileMap" parent="." unique_id=1610764126]
 tile_set = SubResource("TileSet_17b4m")
