@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://vg816nwrkf2d" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="Script" uid="uid://84grpbsodui7" path="res://scenes/main_body.gd" id="4_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://d3cqovtahe71w" path="res://scenes/lasser.tscn" id="6_p57ef"]
-[ext_resource type="Script" uid="uid://b7opoq1ttqt5i" path="res://scenes/coin.gd" id="7_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://bgxb2rouqqcri" path="res://scenes/killzone.tscn" id="8_gee14"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
@@ -123,16 +122,118 @@ position_smoothing_enabled = true
 [node name="coin" parent="." unique_id=1600688841 instance=ExtResource("4_lbhrr")]
 position = Vector2(65, -64)
 collision_mask = 2
-script = ExtResource("7_0tnpc")
 
-[node name="coin3" parent="." unique_id=672003235 instance=ExtResource("4_lbhrr")]
-position = Vector2(356, -30)
+[node name="coin2" parent="." unique_id=267195937 instance=ExtResource("4_lbhrr")]
+position = Vector2(151, -85)
+collision_mask = 2
 
-[node name="coin4" parent="." unique_id=2139042531 instance=ExtResource("4_lbhrr")]
-position = Vector2(209, -132)
+[node name="coin3" parent="." unique_id=1022374415 instance=ExtResource("4_lbhrr")]
+position = Vector2(310, -100)
+collision_mask = 2
 
-[node name="coin2" parent="." unique_id=589411354 instance=ExtResource("4_lbhrr")]
-position = Vector2(341, -96)
+[node name="coin4" parent="." unique_id=1615332209 instance=ExtResource("4_lbhrr")]
+position = Vector2(390, -119)
+collision_mask = 2
+
+[node name="coin5" parent="." unique_id=1450826584 instance=ExtResource("4_lbhrr")]
+position = Vector2(463, -26)
+collision_mask = 2
+
+[node name="coin6" parent="." unique_id=1985119835 instance=ExtResource("4_lbhrr")]
+position = Vector2(592, -111)
+collision_mask = 2
+
+[node name="coin7" parent="." unique_id=1395701118 instance=ExtResource("4_lbhrr")]
+position = Vector2(749, -152)
+collision_mask = 2
+
+[node name="coin8" parent="." unique_id=1856773435 instance=ExtResource("4_lbhrr")]
+position = Vector2(804, -157)
+collision_mask = 2
+
+[node name="coin9" parent="." unique_id=1077176087 instance=ExtResource("4_lbhrr")]
+position = Vector2(952, -173)
+collision_mask = 2
+
+[node name="coin10" parent="." unique_id=1472800250 instance=ExtResource("4_lbhrr")]
+position = Vector2(1050, -113)
+collision_mask = 2
+
+[node name="coin11" parent="." unique_id=2034760482 instance=ExtResource("4_lbhrr")]
+position = Vector2(1120, -89)
+collision_mask = 2
+
+[node name="coin12" parent="." unique_id=383586184 instance=ExtResource("4_lbhrr")]
+position = Vector2(1194, -70)
+collision_mask = 2
+
+[node name="coin13" parent="." unique_id=902385200 instance=ExtResource("4_lbhrr")]
+position = Vector2(1274, -46)
+collision_mask = 2
+
+[node name="coin14" parent="." unique_id=1014908190 instance=ExtResource("4_lbhrr")]
+position = Vector2(1347, -50)
+collision_mask = 2
+
+[node name="coin15" parent="." unique_id=1553187403 instance=ExtResource("4_lbhrr")]
+position = Vector2(1301, -111)
+collision_mask = 2
+
+[node name="coin16" parent="." unique_id=1870188204 instance=ExtResource("4_lbhrr")]
+position = Vector2(1212, -141)
+collision_mask = 2
+
+[node name="coin17" parent="." unique_id=580925110 instance=ExtResource("4_lbhrr")]
+position = Vector2(1112, -165)
+collision_mask = 2
+
+[node name="coin18" parent="." unique_id=1310935171 instance=ExtResource("4_lbhrr")]
+position = Vector2(1435, -63)
+collision_mask = 2
+
+[node name="coin19" parent="." unique_id=577869847 instance=ExtResource("4_lbhrr")]
+position = Vector2(1531, -77)
+collision_mask = 2
+
+[node name="coin20" parent="." unique_id=588370188 instance=ExtResource("4_lbhrr")]
+position = Vector2(1702, -75)
+collision_mask = 2
+
+[node name="coin21" parent="." unique_id=515192085 instance=ExtResource("4_lbhrr")]
+position = Vector2(1800, -159)
+collision_mask = 2
+
+[node name="coin22" parent="." unique_id=53601479 instance=ExtResource("4_lbhrr")]
+position = Vector2(1868, -126)
+collision_mask = 2
+
+[node name="coin23" parent="." unique_id=875419894 instance=ExtResource("4_lbhrr")]
+position = Vector2(2012, -106)
+collision_mask = 2
+
+[node name="coin24" parent="." unique_id=1686476422 instance=ExtResource("4_lbhrr")]
+position = Vector2(2012, -106)
+collision_mask = 2
+
+[node name="coin25" parent="." unique_id=1186531136 instance=ExtResource("4_lbhrr")]
+position = Vector2(2120, -142)
+collision_mask = 2
+
+[node name="coin26" parent="." unique_id=149517323 instance=ExtResource("4_lbhrr")]
+position = Vector2(2284, -120)
+collision_mask = 2
+
+[node name="coin27" parent="." unique_id=1761422186 instance=ExtResource("4_lbhrr")]
+position = Vector2(2357, -106)
+collision_mask = 2
+
+[node name="coin28" parent="." unique_id=860573350 instance=ExtResource("4_lbhrr")]
+position = Vector2(2446, -152)
+collision_mask = 2
+
+[node name="coin29" parent="." unique_id=1913000331 instance=ExtResource("4_lbhrr")]
+position = Vector2(2612, -182)
+collision_mask = 2
 
 [node name="lesser" parent="." unique_id=1279155621 instance=ExtResource("6_p57ef")]
 position = Vector2(184, -55)
@@ -584,3 +685,31 @@ position = Vector2(211.5, -53)
 shape = SubResource("RectangleShape2D_sxpiy")
 
 [connection signal="body_entered" from="coin" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin2" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin3" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin4" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin5" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin6" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin7" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin8" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin9" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin10" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin11" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin12" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin13" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin14" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin15" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin16" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin17" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin18" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin19" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin20" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin21" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin22" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin23" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin24" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin25" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin26" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin27" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin28" to="main body" method="_on_coin_body_entered"]
+[connection signal="body_entered" from="coin29" to="main body" method="_on_coin_body_entered"]
