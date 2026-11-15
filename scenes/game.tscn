@@ -118,6 +118,15 @@ position_smoothing_enabled = true
 [node name="coin" parent="." unique_id=1600688841 instance=ExtResource("4_lbhrr")]
 position = Vector2(65, -64)
 
+[node name="coin3" parent="." unique_id=672003235 instance=ExtResource("4_lbhrr")]
+position = Vector2(356, -30)
+
+[node name="coin4" parent="." unique_id=2139042531 instance=ExtResource("4_lbhrr")]
+position = Vector2(209, -132)
+
+[node name="coin2" parent="." unique_id=589411354 instance=ExtResource("4_lbhrr")]
+position = Vector2(341, -96)
+
 [node name="lesser" parent="." unique_id=1279155621 instance=ExtResource("6_p57ef")]
 position = Vector2(184, -55)
 
