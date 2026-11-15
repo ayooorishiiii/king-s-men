@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c7rebd4ygjf17" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://bi261l337tq5h" path="res://assets/background asset/sci-fi platformer - free/Background_0.png" id="2_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://bbak0r3vrf7fk" path="res://assets/background asset/sci-fi platformer - free/tileset.png" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://vg816nwrkf2d" path="res://scenes/coin.tscn" id="4_lbhrr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yqjtg"]
 texture = ExtResource("2_yqjtg")
@@ -81,3 +82,6 @@ position = Vector2(-2, -52)
 zoom = Vector2(4, 4)
 limit_enabled = false
 position_smoothing_enabled = true
+
+[node name="coin" parent="." unique_id=1600688841 instance=ExtResource("4_lbhrr")]
+position = Vector2(65, -64)
