@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bomnvqt3s5l6r"]
 
 [ext_resource type="Texture2D" uid="uid://cgxytdd4lcyd" path="res://assets/player asset/Game character/heavy_knight_free/spritesheets_free/idle.png" id="1_olcrr"]
+[ext_resource type="Script" uid="uid://drhooycv258ds" path="res://scenes/player(main_character).gd" id="1_vj86t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vj86t"]
 atlas = ExtResource("1_olcrr")
@@ -90,7 +91,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_4gbjq")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"idle",
 "speed": 10.0
 }]
 
@@ -98,11 +99,13 @@ animations = [{
 radius = 16.03122
 
 [node name="player(main character)" type="CharacterBody2D" unique_id=548742080]
+script = ExtResource("1_vj86t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=145228044]
 sprite_frames = SubResource("SpriteFrames_sxpiy")
-autoplay = "default"
-frame_progress = 0.5130083
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.19129564
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500489944]
 position = Vector2(-5, 22)
